@@ -229,3 +229,76 @@ body {
 .hover-text-white:hover {
   color: white !important;
 }
+
+/* Category Card Utilities */
+.bg-off-white {
+  background-color: #F7F8F5;
+}
+
+.text-navy {
+  color: #0B1F2A;
+}
+
+.text-gold {
+  color: #C8A96A;
+}
+
+.bg-gold {
+  background-color: #C8A96A;
+}
+
+.border-gold {
+  border-color: #C8A96A;
+}
+
+.category-card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 48px -12px rgba(0, 42, 58, 0.15);
+}
+
+.category-card-btn {
+  transition: all 0.3s ease;
+}
+
+.category-card:hover .category-card-btn {
+  background-color: #C8A96A !important;
+  color: #ffffff !important;
+  border-color: #C8A96A !important;
+}
+
+.icon-wrapper {
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover .icon-wrapper {
+  transform: scale(1.1);
+}
+
+/* Carousel Utilities */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.snap-x {
+  scroll-snap-type: x mandatory;
+}
+
+.snap-center {
+  scroll-snap-align: center;
+}
+
+.snap-start {
+  scroll-snap-align: start;
+}
