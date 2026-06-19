@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { COLORS } from '@/utils/color';
 import { TEXT_CONTENT, COMPANY_NAME } from '@/utils/constants';
 
@@ -9,9 +10,9 @@ export default function Footer() {
           {TEXT_CONTENT.FOOTER_TEXT}
         </p>
         <div className="d-flex gap-4 small" style={{ color: COLORS.whiteAlpha40, fontSize: '0.875rem' }}>
-          <a href="#hero" className="text-decoration-none transition-all hover-text-white" style={{ color: 'inherit' }}>Home</a>
-          <a href="#products" className="text-decoration-none transition-all hover-text-white" style={{ color: 'inherit' }}>Products</a>
-          <a href="#contact" className="text-decoration-none transition-all hover-text-white" style={{ color: 'inherit' }}>Contact</a>
+          <Link href="/#hero" className="text-decoration-none transition-all hover-text-white" style={{ color: 'inherit' }}>Home</Link>
+          <Link href="/#products" className="text-decoration-none transition-all hover-text-white" style={{ color: 'inherit' }}>Products</Link>
+          <Link href="/#contact" className="text-decoration-none transition-all hover-text-white" style={{ color: 'inherit' }}>Contact</Link>
         </div>
       </div>
     </footer>

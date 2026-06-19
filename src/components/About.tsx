@@ -11,7 +11,7 @@ export default function About() {
       <div className="position-absolute top-0 start-0 w-100 h-100" style={{ zIndex: 0, opacity: 0.6 }}>
         <Image 
           src={aboutBg} 
-          alt="HS Dugar Medical Facility" 
+          alt="HS Dugar Group Medical Facility" 
           fill 
           style={{ objectFit: 'cover', objectPosition: 'center center' }} 
           priority

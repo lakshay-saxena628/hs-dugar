@@ -8,7 +8,7 @@ export default function Contact() {
       <div className="container max-w-4xl px-4 text-center">
         <p className="text-uppercase fw-semibold tracking-widest mb-3" style={{ color: COLORS.cyanAccent, fontSize: '0.75rem' }}>{SECTION_TITLES.CONTACT}</p>
         <h2 className="font-display fw-bold text-white mb-4" style={{ fontSize: 'clamp(1.875rem, 4vw, 2.25rem)' }}>
-          Ready to Partner with HS Dugar?
+          Ready to Partner with HS Dugar Group?
         </h2>
         <p className="fs-5 mb-5 mx-auto" style={{ color: 'rgba(255,255,255,0.65)', maxWidth: '540px' }}>
           Reach out to explore our product catalog, request samples, or discuss bulk export orders.

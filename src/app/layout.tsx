@@ -13,8 +13,8 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "HS Dugar — Medical Component Exports",
-  description: "HS Dugar is a leading exporter of high-quality IV Cannulas, IV Infusion Sets, and Syringes.",
+  title: "HS Dugar Group — Medical Component Exports",
+  description: "HS Dugar Group is a leading exporter of high-quality IV Cannulas, IV Infusion Sets, and Syringes.",
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${playfairDisplay.variable} h-100`}>
+    <html lang="en" className={`${dmSans.variable} ${playfairDisplay.variable} h-100`} data-scroll-behavior="smooth">
       <body className="h-100 font-body text-gray-800 overflow-auto bg-white m-0 p-0">{children}</body>
     </html>
   );
