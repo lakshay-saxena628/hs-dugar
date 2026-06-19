@@ -48,6 +48,8 @@ export default function Navbar() {
         <button
           className="d-md-none btn btn-light border-0 p-2 rounded-3 transition-all"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isMobileMenuOpen}
         >
           <Menu size={24} className="text-brand-800" />
         </button>

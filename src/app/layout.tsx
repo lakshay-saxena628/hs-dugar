@@ -13,8 +13,44 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.hsdugargroup.com"),
   title: "HS Dugar Group — Medical Component Exports",
-  description: "HS Dugar Group is a leading exporter of high-quality IV Cannulas, IV Infusion Sets, and Syringes.",
+  description: "HS Dugar Group is a leading exporter of high-quality IV Cannulas, IV Infusion Sets, and Syringes serving hospitals worldwide.",
+  keywords: ["HS Dugar Group", "Medical Devices", "IV Cannula", "Syringes", "Medical Exports", "ISO Certified Medical Devices", "Healthcare Products"],
+  authors: [{ name: "HS Dugar Group" }],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://www.hsdugargroup.com",
+    siteName: "HS Dugar Group",
+    title: "HS Dugar Group — Global Exporter of Medical Devices",
+    description: "HS Dugar Group is a leading exporter of high-quality IV Cannulas, IV Infusion Sets, and Syringes serving hospitals worldwide.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "HS Dugar Group",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HS Dugar Group — Medical Exports",
+    description: "Trusted global exporter of ISO Certified Medical Devices.",
+    images: ["/og-image.jpg"],
+  },
 };
 
 export default function RootLayout({
