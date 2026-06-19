@@ -79,15 +79,6 @@ export default function ProductDetailsModal({ product, isOpen, onClose }: Produc
                   </div>
                 ))}
               </div>
-
-              <h3 className="fs-5 fw-bold text-navy mb-3">Certifications</h3>
-              <div className="d-flex flex-wrap gap-2">
-                {product.certifications.map((cert, idx) => (
-                  <span key={idx} className="px-3 py-1 bg-light border rounded-pill text-sm fw-medium text-gray-600">
-                    {cert}
-                  </span>
-                ))}
-              </div>
             </div>
           </div>
         </div>

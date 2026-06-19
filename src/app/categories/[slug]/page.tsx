@@ -55,11 +55,11 @@ export default function CategoryPage({ params }: { params: Promise<{ slug: strin
       <section className="py-24">
         <div className="container max-w-7xl px-4 py-5">
           <div className="row g-4">
-            {category.products.map(product => (
+            {category.products.map((product, index) => (
               <div key={product.id} className="col-12 col-md-6 col-lg-4">
                 <div className="category-card rounded-4 overflow-hidden h-100 d-flex flex-column bg-white">
                   <div className="bg-light position-relative d-flex align-items-center justify-content-center border-bottom" style={{ aspectRatio: '4/3' }}>
-                    <Image src={product.imagePlaceholder} alt={product.name} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" style={{ objectFit: 'contain', opacity: product.imagePlaceholder === '/placeholder.jpg' ? 0.1 : 1, padding: product.imagePlaceholder === '/placeholder.jpg' ? '0' : '1rem' }} />
+                    <Image priority={index < 6} src={product.imagePlaceholder} alt={product.name} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" style={{ objectFit: 'contain', opacity: product.imagePlaceholder === '/placeholder.jpg' ? 0.1 : 1, padding: product.imagePlaceholder === '/placeholder.jpg' ? '0' : '1rem' }} />
                     {product.imagePlaceholder === '/placeholder.jpg' && <span className="text-muted font-display fs-6 fw-medium z-1">Product Image</span>}
                   </div>
                   <div className="p-4 d-flex flex-column flex-grow-1">
